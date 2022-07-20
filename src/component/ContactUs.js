@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import emailjs from "emailjs-com";
 import "./ContactUs.css";
+// import path from 'path'
 
 
 function ContactUs() {
@@ -32,10 +33,10 @@ function ContactUs() {
         e.preventDefault();
         document.getElementsByClassName("loader")[0].style.display="block";
 
-        emailjs.sendForm(process.env.REACT_APP_API_KEY, 'template_xntw4om', form.current, 'q1YqRqJ19X3McYHwZ')
+        emailjs.sendForm(process.env. REACT_APP_Email, 'template_xntw4om', form.current, 'q1YqRqJ19X3McYHwZ')
             .then((result) => {
 
-                emailjs.sendForm(process.env.REACT_APP_API_KEY, 'template_b0n5m7m', form.current, 'q1YqRqJ19X3McYHwZ')
+                emailjs.sendForm(process.env. REACT_APP_Email, 'template_b0n5m7m', form.current, 'q1YqRqJ19X3McYHwZ')
                 .then((result) => {
                     document.getElementsByClassName("loader")[0].style.display="none";
                     document.getElementById("SuccusMessage").style.visibility="visible";
