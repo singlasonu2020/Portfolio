@@ -1,0 +1,158 @@
+.Skills
+{
+    position: relative;
+    width: 95%;
+    min-height:88vh;
+}
+
+
+.SkillTitle
+{
+    position: absolute;
+    top:50%;
+    left:5%;
+    font-size: 6rem;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg) translate(0, 50%);
+    color:rgba(255, 255, 255,0.05);
+    animation-duration: 3s;
+    z-index: -2;
+}
+
+@keyframes Title {
+    from {color:rgba(255, 255, 255); left: 80%; top:0; }
+    to {color:rgba(255, 255, 255, 0.05); left: 5%; top:50;}
+}
+
+.SkillComponent
+{
+    text-align:center;
+}
+
+.SkillHeading
+{
+    font-size: 4rem;
+    color: #5EBEC4;
+}
+
+.SkillSkills
+{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor:pointer;
+}
+
+.SkillSkill
+{
+    padding:30px;
+    margin:20px;
+    color:rgb(255, 255, 255);
+}
+
+.SkillSkill:hover
+{
+    background-color: #5ebdc486;
+}
+
+.SkillIcon
+{
+    font-size: 50px;
+    padding: 10px;
+}
+
+.SkillName
+{
+    
+    font-size: 14px;
+    font-weight:500;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 820px)
+{
+    .Skills
+    {
+        width: 100%;
+    }
+
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 420px)
+{
+    .SkillTitle
+    {
+        font-size: 4rem;
+    }
+
+    .SkillHeading
+    {
+        font-size: 2.5rem;;
+    }
+
+    .SkillSkill
+    {
+        padding:15px;
+        margin:10px;
+       
+    }
+
+    .SkillName
+    {
+        font-size: 12px;
+    }
+
+    .SkillIcon
+    {
+        font-size: 30px;
+    }
+
+
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+@media only screen and (max-height: 700px)
+{
+    .Skills
+    {
+        height:700px
+    }
+    .SkillTitle
+    {
+        font-size: 4rem;
+    }
+
+    .SkillHeading
+    {
+        font-size: 2.5rem;;
+    }
+
+    .SkillSkill
+    {
+        padding:15px;
+        margin:10px;
+       
+    }
+
+    .SkillName
+    {
+        font-size: 12px;
+    }
+
+    .SkillIcon
+    {
+        font-size: 30px;
+    }
+
+}

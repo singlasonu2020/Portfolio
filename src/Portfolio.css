@@ -1,0 +1,11 @@
+.ContaintBar
+{
+    position:fixed;
+    height:88vh;
+    top:12vh;
+    width: 100%;
+    background:rgb(27, 27, 27);
+    overflow-y: auto;
+    z-index:-1;
+}
+

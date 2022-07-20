@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'gota-light';
+    src: url('../Gota-Light/Gota-Light.ttf');
+}
+
+.NavBar
+{
+    position: fixed;
+    height:8vh;
+    width: 100%;
+    background-color: rgb(27,27,27);
+    display:flex;
+    padding:2vh 5%;
+    color:rgba(255, 255, 255, 0.7) ;    
+
+
+}
+
+.LogoWithName
+{
+    display: flex;
+    height:100%;
+}
+
+.NavBarLogo
+{
+    height: 100%;
+}
+
+.NavBarLogoName
+{
+    position:relative;
+    top:8vh;
+    left:10px;
+    font-family:gota-light;
+    letter-spacing: 3px;
+    font-size:20px;
+    transform: translateY(-50%);
+}
+
+.NavBarContacts
+{
+
+    display:flex;
+    font-size: 14px;
+    position:relative;
+    top:8vh;
+    left:10px;
+    margin-left:5%;
+    transform: translateY(-50%);
+}
+
+.NavBarContactsDetails
+{
+    font-weight:300;
+    padding: 0 30px;
+    cursor:pointer;
+
+}
+
+.NavBarContactsDetails:hover ,.NavBarBars:hover
+{
+    color:#5EBEC4;
+}
+
+.NavBarBars
+{
+    font-size: 40px;
+    position: fixed;
+    top: 8vh;
+    right: 50px;
+    transform: translateY(-50%);
+    cursor:pointer;
+
+
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 950px) {
+
+    .NavBarContacts
+    {
+        display:none;
+    }
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (max-width:470px) {
+    .LogoWithName
+    {
+        display: block;
+        text-align:left;
+    }
+
+    .NavBarLogo
+    {
+        height: 80%;
+    }
+
+    .NavBarLogoName
+    {
+        position:static;
+        top:0;
+        left:0;
+        transform: translateY(0);
+        font-size:12px;
+    }
+ 
+
+}

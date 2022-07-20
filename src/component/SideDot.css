@@ -1,0 +1,54 @@
+.SideDotDotIcon
+{
+    position:fixed;
+    font-size: 10px;
+    padding:5px;
+    top:50%;
+    right:3%;
+    color:rgb(257,257,257,0.1);
+    cursor:pointer;
+    z-index: -1;
+}
+
+.SideDotDotIcon:hover
+{
+    color:rgb(257,257,257);
+}
+
+#SideDotHome
+{
+    transform: translateY(-120px);
+
+}
+#SideDotSkills
+{
+
+    transform: translateY(-60px);
+
+}
+#SideDotProjects
+{
+    transform: translateY(60px);
+
+}
+
+#SideDotCertificates
+{
+    transform: translateY(120px);
+}
+
+#SideDotContactUs
+{
+    transform: translateY(180px);
+
+}
+
+@media only screen and (max-width: 820px)
+{
+    #SideDot
+    {
+        display: none;
+    }
+
+
+}

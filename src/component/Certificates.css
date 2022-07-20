@@ -1,0 +1,204 @@
+.Certificates
+{
+    position: relative;
+    width: 95%;
+    min-height:88vh;
+}
+
+.CertificatesTitle
+{
+    position: absolute;
+    top:50%;
+    left:5%;
+    font-size: 6rem;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg) translate(0, 50%);
+    color:rgba(255, 255, 255,0.05);
+    /* animation-name:Title ; */
+    animation-duration: 3s;
+    z-index: -2;
+}
+
+@keyframes Title {
+    from {color:rgba(255, 255, 255); left: 80%; top:0; }
+    to {color:rgba(255, 255, 255, 0.05); left: 5%; top:50;}
+}
+
+.CertificatesComponent
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    
+}
+
+
+
+.CertificationHeading
+{
+    font-size: 4rem;
+    color:antiquewhite;
+}
+
+.Certificate
+{
+    background-color: rgba(250, 235, 215, 0.1);
+    padding:10%;
+    margin-top: 5%;
+    color:white;
+}
+
+
+.Certificate:hover
+{
+    background-color: #122a28;
+}
+
+
+.CertificateName
+{
+    font-size:1.5rem;
+    color:#5EBEC4;
+    font-weight:500;
+    cursor:pointer;
+
+
+}
+
+.CertificateNameSpan
+{
+    background-color: #066f77;
+    color:white;
+    border-radius: 5px;
+    padding: 5px 2px;
+    visibility: hidden;
+}
+
+.CertificateName:hover + .CertificateNameSpan
+{
+    visibility: visible;
+}
+
+.CertificateName:hover
+{
+    color:white;
+}
+
+
+.CertificateDescription
+{
+    padding:10px;
+    color:rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    text-align:center;
+
+}
+
+.DurationAndIsuedtBy
+{
+    display:flex;
+    justify-content: center;    
+
+}
+
+.CertificateDuration,.CertificateIssuedBy
+{
+    color:rgba(255, 255, 255, 0.4);
+    padding:20px;
+    
+}
+
+.CertificateIssuedBy:hover
+{
+    color:rgba(255, 255, 255);
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 820px)
+{
+    .Certificates
+    {
+        width: 100%;
+    }
+
+    .CertificateDuration,.CertificateIssuedBy
+    {
+        font-size: 15px;
+        padding:12px;
+
+    }
+
+
+
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 420px)
+{
+    
+
+    .CertificationHeading
+    {
+        font-size: 3rem;
+    }
+
+    .CertificateName
+    {
+        font-size: 1.2rem;
+    }
+  
+    .CertificateDescription
+    {
+        font-size: 0.8rem;
+    }
+
+    .CertificateDuration,.CertificateIssuedBy
+    {
+        font-size: 10px;
+        padding:8px;
+
+    }
+
+
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (max-height: 700px)
+{
+    .Certificates
+    {
+        height:700px
+    }
+
+    .CertificationHeading
+    {
+        font-size: 3rem;
+    }
+
+    .CertificateName
+    {
+        font-size: 1.2rem;
+    }
+  
+    .CertificateDescription
+    {
+        font-size: 0.8rem;
+    }
+
+    .CertificateDuration,.CertificateIssuedBy
+    {
+        font-size: 10px;
+        padding:8px;
+
+    }
+
+   
+
+}
