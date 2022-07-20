@@ -25,7 +25,7 @@ function LandingComponent()
     return(
         <div id="Home" className="Home">
         <div className='HomeContainer'>
-            <div className='HomeName'><span className='HomeNameSpan'>Howdy,</span>I'm Sonu singla</div>
+            <div className='HomeName'><span className='HomeNameSpan'>Howdy,</span>I'm Sonu Singla</div>
             <div className='HomeBranch'>Computer Engineer <span className="HomeNameSpan">(B.Tech)</span></div>
             <div className='AboutUsHeading'>About Me</div>
             <div className='AboutUs'>

@@ -32,7 +32,7 @@ function Education()
             <div className="EducationComponent">
                 <div className='EducationHeading'>Education</div>
                 <div className='EducationDetails'>
-                  <div className="NameOfClass">B.Tech in Computer Enggineering</div>
+                  <div className="NameOfClass">B.Tech in Computer Engineering</div>
                   <img src={logo} className="CollegeLogo"/>
                   <div id="CollegeName" className="CollegeName" onClick={()=>{window.location.href = `http://ipu.ac.in/usict/`;}}>UNIVERSITY SCHOOL OF INFORMATION, COMMUNICATION & TECHNOLOGY,Delhi</div>
                   <div className="CurrentDetail">
