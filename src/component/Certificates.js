@@ -9,7 +9,11 @@ function Certification()
         const observer = new IntersectionObserver((entries) => {
           if (entries[0].isIntersecting) {
             document.getElementById(`SideDotCertificates`).style.color="#5EBEC4";
-            document.getElementById("CertificatesTitle").style.animationName="Title";
+            if(window.innerWidth>500 && window.innerHeight>500)
+            {
+              document.getElementById("CertificatesTitle").style.animationName="Title";
+            }
+            
           }
           else
           {

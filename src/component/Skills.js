@@ -20,7 +20,12 @@ function Skills()
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
         document.getElementById(`SideDotSkills`).style.color="#5EBEC4";
-        document.getElementById("SkillTitle").style.animationName="Title";
+        if(window.innerWidth>500 && window.innerHeight>500)
+        {
+          document.getElementById("SkillTitle").style.animationName="Title";
+
+        }
+        
       }
       else
       {
@@ -85,7 +90,7 @@ function Skills()
 
                     <div className="SkillSkill">
                       <FontAwesomeIcon className='SkillIcon' icon={faDatabase}/>
-                      <h6  className='SkillName'>DATABASE(MYSQL,MONGO DB)</h6>
+                      <h6  className='SkillName'>DATABASE(MYSQL, MONGODB)</h6>
                     </div>
 
                     <div className="SkillSkill">

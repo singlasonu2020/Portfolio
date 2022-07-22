@@ -11,7 +11,12 @@ function Education()
         const observer = new IntersectionObserver((entries) => {
           if (entries[0].isIntersecting) {
             document.getElementById(`SideDotEducation`).style.color="#5EBEC4";
-            document.getElementById("EducationTitle").style.animationName="Title";
+
+            if(window.innerWidth>500 && window.innerHeight>500)
+            {
+               document.getElementById("EducationTitle").style.animationName="Title";
+          
+            }
           }
           else
           {

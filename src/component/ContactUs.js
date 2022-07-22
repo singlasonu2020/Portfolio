@@ -12,8 +12,11 @@ function ContactUs() {
         const observer = new IntersectionObserver((entries) => {
             if (entries[0].isIntersecting) {
                 document.getElementById(`SideDotContactUs`).style.color = "#5EBEC4";
-                document.getElementById("ContactUsttitle").style.animationName="Title";
-
+                if(window.innerWidth>500 && window.innerHeight>500)
+                {
+                    document.getElementById("ContactUsttitle").style.animationName="Title";
+                }
+                
             }
             else {
                 document.getElementById(`SideDotContactUs`).style.color = "rgb(257,257,257,0.1)";
